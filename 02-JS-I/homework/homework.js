@@ -129,15 +129,22 @@ function esPar(num) {
     // Devuelve "true" si "num" es par
     // De lo contrario, devuelve "false"
     // Tu código:
-
-
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
-
+    if (num % 2 === 1) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function elevarAlCuadrado(num) {
@@ -192,6 +199,13 @@ function esPositivo(numero) {
     //Si el número es positivo, devolver ---> "Es positivo"
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
+    if (numero === 0) {
+        return false;
+    } else if (numero > 0) {
+        return "Es positivo";
+    } else {
+        return "Es negativo";
+    }
 
 }
 
@@ -261,8 +275,17 @@ function esVocal(letra) {
     //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
     // Si no es vocal, tambien debe devolver "Dato incorrecto".
     //Escribe tu código aquí
+    if (letra.length > 1) {
+        return "Dato incorrecto"
+    }
+    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+        return "Es vocal"
+    }
+    return "Dato incorrecto"
 
 }
+
+
 
 
 
